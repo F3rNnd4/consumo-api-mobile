@@ -19,5 +19,6 @@ Este projeto é uma aplicação mobile desenvolvida em **React Native** que cons
 - **Jikan API**: API para informações sobre animes.
 
 ## 🌐 APIs Utilizadas
-**Jikan API**: https://jikan.moe/
-**Studio Ghibli API**: https://ghibliapi.vercel.app/
+
+- **Jikan API**: https://jikan.moe/
+- **Studio Ghibli API**: https://ghibliapi.vercel.app/
