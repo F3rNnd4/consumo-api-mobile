@@ -9,8 +9,6 @@ import { View, FlatList, SafeAreaView, StyleSheet, Text } from "react-native";
 // Importa a biblioteca axios para buscar dados da internet
 import axios from "axios";
 
-// Importa o componente que mostra o card com dados do filme
-///import FilmCard from "../components/FilmCard";
 //Importa o componente que mostra o card com dados do anime
 import AnimeCard from "../components/AnimeCard.js";
 
@@ -19,9 +17,6 @@ import SkeletonCard from "../components/SkeletonCard";
 
 // Função principal que representa a tela inicial
 export default function Home() {
-  // Cria um estado chamado films para guardar a lista de filmes
-  ///const [films, setFilms] = useState([]);
-  
   // Cria um estado chamado animes para guardar a lista de animes
   const [animes, setAnimes] = useState([]);
 
@@ -34,8 +29,6 @@ export default function Home() {
     setTimeout(() => {
       // Faz uma requisição GET na API do Studio Ghibli
       axios
-        ///.get("https://ghibliapi.vercel.app/films")
-        ///.then((res) => setFilms(res.data)) // Se der certo, guarda os dados no estado "films"
         .get("https://api.jikan.moe/v4/anime")
         .then((res) => setAnimes(res.data.data)) // Se der certo, guarda os dados no estado "animes"
         .catch((err) => console.error(err)) // Se der erro, mostra no console
@@ -47,7 +40,6 @@ export default function Home() {
     // SafeAreaView evita que o conteúdo fique atrás da barra de status (notch)
     <SafeAreaView style={styles.container}>
       {/* Título da tela */}
-      {/* <Text style={styles.header}>🎥 Filmes Studio Ghibli</Text> */}
       <Text style={styles.header}>🎥 Animes Populares 🗾🇯🇵</Text>
 
       {/* Se estiver carregando, mostra os Skeletons */}
@@ -59,14 +51,6 @@ export default function Home() {
           contentContainerStyle={styles.list} // Aplica o estilo na lista
         />
       ) : (
-        // // Se já carregou os dados, mostra os filmes reais
-        // <FlatList
-        //   data={films} // Lista vinda da API
-        //   keyExtractor={(item) => item.id} // Usa o ID do filme como chave
-        //   renderItem={({ item }) => <FilmCard film={item} />} // Renderiza um FilmCard passando o filme
-        //   contentContainerStyle={styles.list} // Aplica o estilo na lista
-        // />
-
         // Se já carregou os dados, mostra os animes reais
         <FlatList
           data={animes} // Lista vinda da API

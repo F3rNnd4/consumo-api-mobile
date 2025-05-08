@@ -1,6 +1,6 @@
-# Studio Ghibli e Animes Populares 🎥🗾
+# Animes Populares 🎥🗾
 
-Este projeto é uma aplicação mobile desenvolvida em **React Native** que consome APIs para exibir informações sobre filmes do Studio Ghibli (código comentado) e animes populares. Ele utiliza bibliotecas modernas como **Axios**, **Moti** e **React Native Reanimated** para criar uma experiência fluida e visualmente atraente.
+Este projeto é uma aplicação mobile desenvolvida em **React Native** que consome APIs para exibir informações sobre animes populares. Ele utiliza bibliotecas modernas como **Axios**, **Moti** e **React Native Reanimated** para criar uma experiência fluida e visualmente atraente.
 
 ## 📋 Funcionalidades
 
@@ -21,4 +21,35 @@ Este projeto é uma aplicação mobile desenvolvida em **React Native** que cons
 ## 🌐 APIs Utilizadas
 
 - **Jikan API**: https://jikan.moe/
-- **Studio Ghibli API (API comentada)**: https://ghibliapi.vercel.app/
+
+## Como rodar o projeto
+
+- Clone o repositório:
+```
+git clone https://github.com/seuusuario/consumo-api-anime.git
+cd consumo-api-anime
+```
+
+- Instale as dependências:
+```
+npm install
+```
+
+- Inicie o app:
+```
+npx expo start
+```
+
+## 📂 Estrutura do projeto
+
+```
+.
+├── app/
+│   └── index.js              # Tela inicial (lista de animes)
+├── components/
+│   ├── AnimeCard.js          # Componente visual dos animes
+│   └── SkeletonCard.js       # Skeleton animado para loading
+├── assets/                   # (opcional) imagens e ícones
+├── package.json
+└── README.md
+```
