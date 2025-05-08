@@ -1,6 +1,6 @@
 # Studio Ghibli e Animes Populares 🎥🗾
 
-Este projeto é uma aplicação mobile desenvolvida em **React Native** que consome APIs para exibir informações sobre filmes do Studio Ghibli(que está comentado) e animes populares. Ele utiliza bibliotecas modernas como **Axios**, **Moti** e **React Native Reanimated** para criar uma experiência fluida e visualmente atraente.
+Este projeto é uma aplicação mobile desenvolvida em **React Native** que consome APIs para exibir informações sobre filmes do Studio Ghibli (código comentado) e animes populares. Ele utiliza bibliotecas modernas como **Axios**, **Moti** e **React Native Reanimated** para criar uma experiência fluida e visualmente atraente.
 
 ## 📋 Funcionalidades
 
